@@ -1,4 +1,4 @@
-# Distributed-Analytics-for-Industrial-Automation-Course-Project
+# Distributed-Analytics-for-Industrial-Automation-Course-Project (23IM10008, Ayush Kumar)
 # Distributed LLM-Assisted Path Planning for Multi-UAV Systems
 
 A simulation framework in which a **team of UAVs plans its own paths with no ground
