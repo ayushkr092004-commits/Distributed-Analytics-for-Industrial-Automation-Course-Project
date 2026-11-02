@@ -1,0 +1,9 @@
+experiment,label,backend,uavs,targets,size,loss,comm_range,seeds,success_rate,collisions,near_misses,makespan,total_distance,wait_steps,messages_sent,messages_delivered,llm_calls,wall_time_s
+scalability,4 UAVs,mock,4,6,30,0.0,8.0,4,1.0,0,0.5,26.25,112.7,5.5,61.5,45.25,20.25,0.13
+scalability,8 UAVs,mock,8,12,40,0.0,8.0,4,1.0,0,1.75,35.75,292.88,29,178.25,248.25,65,0.76
+scalability,12 UAVs,mock,12,16,45,0.0,8.0,4,1.0,0,3.75,29.25,347.03,48.75,268,457.5,113,1.44
+scalability,16 UAVs,mock,16,20,50,0.0,8.0,4,1.0,0,1.75,26.75,441.37,40.75,300,366.75,118.5,5.15
+robustness,loss 0% / range 8.0,mock,8,12,40,0.0,8.0,4,1.0,0,1.75,35.75,292.88,29,178.25,248.25,65,0.75
+robustness,loss 20% / range 6.0,mock,8,12,40,0.2,6.0,4,1.0,0,2.25,36,295.98,29.5,171.5,126.5,61.75,0.54
+robustness,loss 40% / range 5.0,mock,8,12,40,0.4,5.0,4,1.0,0,5.5,37.75,308.45,35.75,183.5,92,67.75,0.59
+robustness,loss 60% / range 4.0,mock,8,12,40,0.6,4.0,4,1.0,0,6,37.25,306.11,40.5,180.75,37.75,62,0.61

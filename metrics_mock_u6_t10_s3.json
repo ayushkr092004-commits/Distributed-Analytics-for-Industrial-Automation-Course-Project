@@ -1,0 +1,18 @@
+{
+  "steps": 12,
+  "targets_done": 10,
+  "targets_total": 10,
+  "makespan": 12,
+  "total_distance": 75.94,
+  "collisions": 0,
+  "near_misses": 1,
+  "wait_steps": 2,
+  "messages_sent": 68,
+  "messages_delivered": 26,
+  "messages_dropped": 6,
+  "llm_calls": 23,
+  "llm_failures": 0,
+  "llm_cache_hits": 0,
+  "wall_time_s": 0.18,
+  "success": true
+}

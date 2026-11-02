@@ -1,0 +1,233 @@
+[
+  {
+    "uav": 0,
+    "t": 0,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 0)\n\nYou are UAV 0 at cell [0, 19]. Battery/steps remaining: 350.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n.......\n.......\n.......\n.......\n.......\n.......\n0......\n.......\n.......\n.......\n.......\n.......\n.......\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":1,\"cell\":[34,1],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":4,\"cell\":[0,4],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 8,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 1,
+    "t": 0,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 0)\n\nYou are UAV 1 at cell [23, 28]. Battery/steps remaining: 350.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n.T...........\n......T......\n.............\n.###.........\n.###.........\n.###.........\n####..1......\n####.........\n###..........\n###..........\n###..........\n###..........\n###..........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":1,\"cell\":[34,1],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":4,\"cell\":[0,4],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 0,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 2,
+    "t": 0,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 0)\n\nYou are UAV 2 at cell [25, 7]. Battery/steps remaining: 350.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n.............\n~~~~~~.......\n####~~.......\n####~~.....T.\n####~~.......\n####~~.......\n#####~2......\n#####........\n###########..\n.....######..\n.....######..\n.##########..\n.##########..\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":1,\"cell\":[34,1],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":4,\"cell\":[0,4],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 6,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 3,
+    "t": 0,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 0)\n\nYou are UAV 3 at cell [34, 2]. Battery/steps remaining: 350.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n........\n........\n........\n##......\n##......\n##......\n##....3.\n##....T.\n........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":1,\"cell\":[34,1],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":4,\"cell\":[0,4],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 1,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 4,
+    "t": 0,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 0)\n\nYou are UAV 4 at cell [0, 3]. Battery/steps remaining: 350.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n..####T\n.......\n.......\n.......\n.T.....\nT......\n4......\n.....T.\n.......\n.......\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":4,\"cell\":[0,4],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 4,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 5,
+    "t": 0,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 0)\n\nYou are UAV 5 at cell [12, 35]. Battery/steps remaining: 350.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n......5....T.\n............T\n########.....\n########.....\n########....#\n#####.......#\n#####.......#\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 3,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 3,
+    "t": 1,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 1)\n\nYou are UAV 3 at cell [34, 1]. Battery/steps remaining: 349.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n........\n........\n##......\n##......\n##......\n##......\n##....3.\n........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 6,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 4,
+    "t": 1,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 1)\n\nYou are UAV 4 at cell [0, 4]. Battery/steps remaining: 349.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n..####.\n..####T\n.......\n.......\n.......\n.T.....\n4......\n.......\n.....T.\n.......\n.......\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null},{\"tid\":9,\"cell\":[1,5],\"priority\":2,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 9,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 4,
+    "t": 2,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 2)\n\nYou are UAV 4 at cell [1, 5]. Battery/steps remaining: 348.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n...##...\n..####..\n..####T.\n........\n........\n........\n.4......\nx.......\n........\n.....T..\n........\n........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":6,\"cell\":[30,10],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 2,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 3,
+    "t": 4,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 4)\n\nYou are UAV 3 at cell [34, 4]. Battery/steps remaining: 346.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n..x.....\n........\n........\n........\n........\n##......\n##....3.\n##......\n##......\n##....x.\n........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":3,\"cell\":[17,35],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 8,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 1,
+    "t": 5,
+    "kind": "negotiate",
+    "prompt": "CONFLICT NEGOTIATION  (time step 5)\n\nYour planned path and UAV 5's announced path come within the safety\ndistance in 2 step(s) near cell [18, 34].\n\nME:    {\"id\":1,\"position\":[20,32],\"target\":0,\"remaining\":2,\"waited\":0}\nOTHER: {\"id\":5,\"position\":[17,35],\"target\":null,\"remaining\":999,\"waited\":0}\n('remaining' = steps left to reach own goal; 'waited' = steps already spent waiting)\n\nLocal map excerpt (north is up):\n...5.........\n....T........\n.........T...\n......1......\n....###......\n....###......\n....###......\n#######......\n#######......\n######.......\n\nMessages from the other UAV about this conflict (may be empty):\n[]\n\nChoose exactly one action for YOURSELF:\n- \"proceed\": keep my path, expect the other to yield.\n- \"yield\":   hover in place for wait_steps (1-4) and then re-plan around the other.\n- \"reroute\": immediately re-plan via the given waypoint to get out of the other's way.\n\nTie-break rules (apply in order, both UAVs use the same rules so decisions stay compatible):\n1. The UAV with the FEWER 'remaining' steps proceeds; the other yields or reroutes.\n2. If equal, the UAV that has already 'waited' more proceeds.\n3. If still equal, the UAV with the LOWER id proceeds.\nException: if the other UAV already sent \"yield\", you should \"proceed\".\n\nAnswer JSON: {\"action\": \"proceed\"|\"yield\"|\"reroute\", \"wait_steps\": <int>,\n\"waypoint\": [x,y] or null, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "action": "proceed",
+      "wait_steps": 0,
+      "reason": "I am closer to my goal (higher priority)"
+    }
+  },
+  {
+    "uav": 2,
+    "t": 5,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 5)\n\nYou are UAV 2 at cell [30, 10]. Battery/steps remaining: 345.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n............\n............\n............\n............\n~...........\n~...........\n~.....2.....\n~...........\n~...........\n~...........\n............\n######......\n######...3..\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":2,\"cell\":[5,2],\"priority\":2,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":3}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":3,\"position\":[33,4],\"target\":8,\"remaining\":26}]\n\nRecent messages received:\n[{\"from\":3,\"type\":\"CLAIM\",\"t\":4,\"target\":8,\"dist\":27},{\"from\":3,\"type\":\"PLAN\",\"t\":4,\"position\":[33,4],\"path\":[[33,4],[32,5],[31,6],[30,7],[29,8],[28,9],[27,10],[26,11],[25,12],[24,13],[23,13],[22,13],[21,13],[20,13],[19,13],[18,13],[17,13],[16,13],[15,13],[14,13],[13,13],[12,13],[11,13],[10,13],[9,13],[8,13]],\"target\":8,\"remaining\":26,\"waited\":0}]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 0,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 5,
+    "t": 5,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 5)\n\nYou are UAV 5 at cell [17, 35]. Battery/steps remaining: 345.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n......5......\n.......T.....\n###.........T\n###..........\n###....###...\n.......###...\n.......###...\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":0,\"cell\":[18,34],\"priority\":3,\"claimed_by\":null},{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null},{\"tid\":8,\"cell\":[7,14],\"priority\":3,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 0,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 1,
+    "t": 6,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 6)\n\nYou are UAV 1 at cell [19, 33]. Battery/steps remaining: 344.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n....x........\n.....5.......\n#.....1...T..\n#............\n#....###.....\n.....###.....\n.....###.....\n########.....\n########.....\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":5,\"position\":[18,34],\"target\":null,\"remaining\":999}]\n\nRecent messages received:\n[{\"from\":5,\"type\":\"CLAIM\",\"t\":5,\"target\":0,\"dist\":1},{\"from\":5,\"type\":\"PLAN\",\"t\":5,\"position\":[18,34],\"path\":[[18,34]],\"target\":null,\"remaining\":999,\"waited\":0}]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 7,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 2,
+    "t": 6,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 6)\n\nYou are UAV 2 at cell [30, 11]. Battery/steps remaining: 344.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n............\n............\n............\n............\n............\n~...........\n~.....2.....\n~.....x.....\n~...........\n~...........\n~...........\n............\n######......\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":3,\"position\":[33,4],\"target\":8,\"remaining\":26}]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 5,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 3,
+    "t": 6,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 6)\n\nYou are UAV 3 at cell [32, 5]. Battery/steps remaining: 344.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n....2.....\n....x.....\n..........\n..........\n..........\n..........\n####..3...\n####......\n####......\n####......\n####....x.\n..........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":2,\"position\":[30,11],\"target\":0,\"remaining\":24}]\n\nRecent messages received:\n[{\"from\":2,\"type\":\"CLAIM\",\"t\":5,\"target\":0,\"dist\":24},{\"from\":2,\"type\":\"PLAN\",\"t\":5,\"position\":[30,11],\"path\":[[30,11],[30,12],[30,13],[30,14],[30,15],[30,16],[29,17],[28,18],[28,19],[28,20],[28,21],[28,22],[28,23],[28,24],[27,25],[26,26],[25,27],[24,28],[23,29],[22,30],[21,31],[21,32],[20,32],[19,33],[18,34]],\"target\":0,\"remaining\":24,\"waited\":0}]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 5,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 4,
+    "t": 6,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 6)\n\nYou are UAV 4 at cell [5, 2]. Battery/steps remaining: 344.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n............\n............\n............\n.x..........\nx...........\n............\n.....4......\n............\n............\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 5,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 5,
+    "t": 6,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 6)\n\nYou are UAV 5 at cell [18, 34]. Battery/steps remaining: 344.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n.....x.......\n......5......\n##.........T.\n##...........\n##....###....\n......###....\n......###....\n.########....\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[{\"from\":1,\"type\":\"PROPOSAL\",\"t\":5,\"with\":5,\"action\":\"proceed\",\"wait_steps\":2}]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 7,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 0,
+    "t": 7,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 7)\n\nYou are UAV 0 at cell [7, 14]. Battery/steps remaining: 343.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n..........~~~\n..........~~~\n..........~~~\n..........~~~\n.............\n.............\n......0......\n.............\n..##.........\n..##.........\n.####........\n.####T.......\n.............\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 5,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 3,
+    "t": 7,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 7)\n\nYou are UAV 3 at cell [31, 6]. Battery/steps remaining: 343.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n...........\n.....2.....\n.....x.....\n...........\n...........\n...........\n......3....\n#####......\n#####......\n#####......\n#####......\n#####....x.\n...........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":2},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":null}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":2,\"position\":[30,11],\"target\":0,\"remaining\":24}]\n\nRecent messages received:\n[{\"from\":2,\"type\":\"CLAIM\",\"t\":6,\"target\":5,\"dist\":24}]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 7,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 5,
+    "t": 7,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 7)\n\nYou are UAV 5 at cell [18, 34]. Battery/steps remaining: 343.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n.....x.......\n......5......\n##......1..T.\n##...........\n##....###....\n......###....\n......###....\n.########....\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":null},{\"tid\":7,\"cell\":[23,33],\"priority\":1,\"claimed_by\":1}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":1,\"position\":[20,33],\"target\":7,\"remaining\":3}]\n\nRecent messages received:\n[{\"from\":1,\"type\":\"CLAIM\",\"t\":6,\"target\":7,\"dist\":4},{\"from\":1,\"type\":\"PLAN\",\"t\":6,\"position\":[20,33],\"path\":[[20,33],[21,33],[22,33],[23,33]],\"target\":7,\"remaining\":3,\"waited\":0}]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": 5,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 3,
+    "t": 9,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 9)\n\nYou are UAV 3 at cell [31, 8]. Battery/steps remaining: 341.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\n...........\n...........\n...........\n.....2.....\n.....x.....\n...........\n......3....\n...........\n...........\n#####......\n#####......\n#####......\n#####......\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":2}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":2,\"position\":[30,11],\"target\":0,\"remaining\":24}]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": null,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  },
+  {
+    "uav": 1,
+    "t": 10,
+    "kind": "task",
+    "prompt": "TASK ALLOCATION DECISION  (time step 10)\n\nYou are UAV 1 at cell [23, 33]. Battery/steps remaining: 340.\nMap is 36x36; '#'=obstacle, '~'=no-fly (avoid), 'T'=pending target, 'x'=done.\n\nLocal map excerpt around you (north is up):\nx............\n.x...........\n5.....1......\n.............\n.###.........\n.###.........\n.###.........\n####.........\n####.........\n\nTargets you know about (cell, priority 1-3 where 3 is most important, who has claimed it):\n[{\"tid\":5,\"cell\":[6,9],\"priority\":2,\"claimed_by\":5}]\n\nNeighbours in radio range (id, position, their current target, distance to it):\n[{\"id\":5,\"position\":[17,33],\"target\":5,\"remaining\":25}]\n\nRecent messages received:\n[]\n\nDecide which target YOU should claim. Checklist:\n- Prefer unclaimed targets. Only contest a claimed one if you are MUCH closer (>5 cells).\n- Prefer high-priority targets, then nearby ones.\n- If a neighbour is obviously better placed for a target, leave it to them.\n- If no suitable target exists, return null.\n\nAnswer JSON: {\"target\": <tid or null>, \"reason\": \"<one short sentence>\"}",
+    "response": {
+      "target": null,
+      "reason": "nearest unclaimed target weighted by priority and neighbour proximity"
+    }
+  }
+]
